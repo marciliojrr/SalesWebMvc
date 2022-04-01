@@ -22,7 +22,6 @@ namespace SalesWebMVC.Services
 
         public void Insert(Seller obj)
         {
-            obj.Department = _context.Department.First(); // Define um dept padrao que ja exista enquanto nao resolve problema da chave estrangeira
             _context.Add(obj);
             _context.SaveChanges();
         }
