@@ -45,6 +45,7 @@ namespace SalesWebMVC.Controllers
                 return View(viewModel);
             }
 
+
             _sellerService.Insert(seller);
             return RedirectToAction(nameof(Index));
         }
